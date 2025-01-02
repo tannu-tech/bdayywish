@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Birthday Gift</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+      position: relative;
+    }
+    .balloon {
+    width: 124px;
+    cursor: pointer;
+    animation: float 2s infinite ease-in-out;
+    height: 129px;
+}
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+    .message {
+      display: none;
+      font-size: 16px;
+      color: #000;
+      padding: 7px -21px;
+      text-decoration: start;
+      margin: 120px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 320px) {
+      .message {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+    }
+    .gift-box {
+      display: none;
+      width: 150px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="image.png" alt="Hand holding a balloon" class="balloon" id="balloon">
+    <img src="" alt="" class="gift-box" id="giftBox">
+    <div class="message" id="message"><p>🎉 Happy Birthday sir..! 🎉<br>
+        thank you for being a great mentor and a friend. I hope you have
+         a wonderful day and a year filled with happiness and success. 🎂🎈🎁
+        ye hogay english me now..some mix of hindi and english..🤣🤣 so i know mene code
+         to chatgpt se uthya hai but i think ye thoda sa meri tarf se tere accoding teri style me wish..
+         i know itna accha nai hai but fir bhi i try🤣 copy past karne se pehle likhna padta hai so vo mehnat hi meri vo sb 6od happy bday brother chhota hai tu mujse but ..
+        you always help me in every situation..so thank you for being there for me..🎂🎈🎁and  boht bore nai kru teri tarh...happy Birthday jk boss😊
+    allah always bless you and insha allah tu jo cahhta haina acche mukab pr pohchna or teri family ko khush rakhna inshallah allah teko sare khushi denge or bro hai tu iska matlb ye nai tu mera best buddy hai and i hope or inshallah ham hamesha rahe ...or teko bata du time manegment sikhja🤣🤣varnaa koi na time nai hai pata hainaa😋just kinding aaaj to mere bhai ka bday hai o mera bhai ka bday hai...(ye song hai pata haina)...
+    😁so don't worry murgi always support you...so be happy and hetlthy jkk..😊 </p>
+    </div>
+  </div>
+
+  <script>
+    const balloon = document.getElementById('balloon');
+   
+    const message = document.getElementById('message');
+
+    balloon.addEventListener('click', () => {
+      balloon.style.display = 'none';
+      giftBox.style.display = 'block';
+      message.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
